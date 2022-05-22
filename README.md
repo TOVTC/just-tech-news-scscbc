@@ -1,7 +1,7 @@
 
-  # Just Tech News (Sequelize Database)
+  # Just Tech News
   
-  This application uses Sequelize, my SQL, and Express.js to host a tech-related news site. This application hosts the backend logic that allows users to create and login to personal accounts, create and edit posts, upvote and comment on posts, edit and delete accounts and posts. This application also uses bcrypt to secure account passwords.
+  Just Tech News is a full-stack web application that allows users to make, comment, and vote on community-generated posts. This application uses a model-view-controller framework to handle data. Users are able to create and login to personal accounts, create, edit, and delete posts + upvote and comment on posts. The application on the front end uses HTML, CSS, and JavaScript. On the backend, data is managed using MySQL and sequelize (passwords are protected using bcrypt). Node.js and Express.js handle API requests.
   
   ## Table of Contents
   
@@ -9,12 +9,15 @@
   * [Built Using](#built)
   * [Usage Information](#usage)
   * [Authors & Acknowledgements](#credits)
+  * [Tests](#tests)
   * [Contact](#questions)
   
   ## Installation <a name="installation"></a>
-  After cloning the repository, enter "npm i" into the terminal to install all dependencies and enter "npm start" to run the application. Requests can be made using Insomnia. This application is also hosted on Heroku.
+  After cloning the repository, enter "npm i" into the terminal to install all dependencies and enter "npm start" to run the application. For local use, please create a .env file with "DB_NAME", "USER", and "PASSWORD" variables.
 
   ## Built Using <a name="built"></a>
+  * HTML
+  * CSS
   * JavaScript
   * Node.js
   * MySQL
@@ -23,20 +26,27 @@
   * bcrypt
   * npm dotenv
   * npm mysql2
+  * npm express-sessions
+  * npm connect-session-sequelize
+  * Handlebars
+  * Jest
   * Insomnia
   * Heroku
   
   ## Usage Information<a name="usage"></a>
-  [Just Tech News (Sequelize Database)](https://sleepy-chamber-96747.herokuapp.com/) <- solely to host database and api routes - frontend not available</br>
+  [Just Tech News](https://sleepy-chamber-96747.herokuapp.com/)</br>
     
-  This application uses only api routes and databases and is solely a backend application.</br>
-  </br>![Just Tech News (Sequelize Database)](./just-tech-news.png "Just Tech News (Sequelize Database)")</br>
-    
+  This application hosts a forum for community-generated posts.</br>
+  </br>![Just Tech News](./just-tech-news.png "Just Tech News")</br>
+  
   ## Authors & Acknowledgements<a name="credits"></a>
   
   Base code © 2020 - 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
   
   Made by [TOVTC](https://github.com/TOVTC).
+
+  ## Tests<a name="tests"></a>
+  Jest tests were written for validating formatting.
   
   ## Questions?<a name="questions"></a>
   Contact repository author via [GitHub](https://github.com/TOVTC).</br>
